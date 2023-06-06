@@ -24,3 +24,8 @@ plt.title('Contagem de Artistas')
 plt.xticks(rotation=60)
 st.pyplot(fig)
 
+fig, ax = plt.subplots(figsize=(5,5))
+sns.barplot(data=base.head(15), x='Artist', y='Popularity')
+plt.xticks(rotation=(90))
+st.pyplot(fig)
+
